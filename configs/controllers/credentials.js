@@ -29,8 +29,6 @@ req.body.authority = 'User'
         const hashedPassword = await bcrypt.hash(password, 10)
 
         const userData = {
-            first_name: firstName,
-            last_name: lastName,
             username: userName,
             email: email,
             password: hashedPassword,

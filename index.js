@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken')
 const cors = require('cors')
 const router = require('./configs/routers/app')
 
-mongoose.connect(dburi)
+mongoose.connect('mongodb+srv://musab:musab@cluster1.runm9lr.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{console.log('connected')})
 .catch((e)=>{console.log(e)})
 
